@@ -65,6 +65,7 @@ def get_picture_by_id(id):
 def create_picture():
     """create a picture resource as json"""
     input_pic = request.json
+    print (input_pic)
     if data:
         for pic in data:
             if pic["id"] == input_pic["id"]:
